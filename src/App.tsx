@@ -2,6 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const obj: any = {levelA: {levelB: 1}};
+
+const testOne = obj?.levelA?.levelB;
+
+console.log('result', testOne)
+
 const App: React.FC = () => {
   return (
     <div className="App">
