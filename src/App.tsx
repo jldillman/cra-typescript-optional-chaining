@@ -5,8 +5,10 @@ import './App.css';
 const obj: any = {levelA: {levelB: 1}};
 
 const testOne = obj?.levelA?.levelB;
+const testTwo = obj?.levelB?.levelA;
 
-console.log('result', testOne)
+console.log('optional chaining success', testOne);
+console.log('optional chaining not-success', testTwo);
 
 const App: React.FC = () => {
   return (
